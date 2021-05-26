@@ -1,8 +1,9 @@
 <ul>
 <% @movies.each do |movie| %>
-<li>
+<li>Now showing
 <strong><%= movie.name %></strong> in
-
+<%= movie.location %>,
+<%= number_to_currency(movie.price, precision:0, unit:"₽")  %>
 
 </li>
 <% end %>
