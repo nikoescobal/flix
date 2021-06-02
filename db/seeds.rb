@@ -8,6 +8,36 @@
 
 Movie.create!([
   {
+    title: "Apocalypto",
+    description:
+    %{
+      As the Mayan kingdom faces its decline, a young man is taken on a perilous journey to a world ruled by fear and oppression.
+    }.squish,
+    released_on: "2006-12-08",
+    rating: "R",
+    total_gross: 120_673_227
+  },
+  {
+    title: "Inception",
+    description:
+    %{
+      A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.
+    }.squish,
+    released_on: "2010-07-16",
+    rating: "PG-13",
+    total_gross: 836_836_967
+  },
+  {
+    title: "Avatar",
+    description:
+    %{
+      A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.
+    }.squish,
+    released_on: "2009-12-18",
+    rating: "PG-13",
+    total_gross: 2_847_246_203
+  },
+  {
     title: 'Avengers: Endgame',
     description:
     %{
@@ -136,15 +166,5 @@ Movie.create!([
     released_on: "2017-06-02",
     rating: "PG-13",
     total_gross: 821_847_012
-  }
-  {
-    title: "Apocalypto",
-    description:
-    %{
-      As the Mayan kingdom faces its decline, a young man is taken on a perilous journey to a world ruled by fear and oppression.
-    }.squish,
-    released_on: "2017-06-02",
-    rating: "PG-13",
-    total_gross: 120_673_227
   }
 ])
