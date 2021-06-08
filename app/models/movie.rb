@@ -1,8 +1,8 @@
 class Movie < ApplicationRecord
+  validates :title, :released_on, :duration, presence: true
 
   def self.released
-    where("relleased_on == true")
-    
+    where("released_on == true")
   end
 
   def flop?
