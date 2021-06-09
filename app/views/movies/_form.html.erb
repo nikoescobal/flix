@@ -1,13 +1,12 @@
 <%= form_with(model: movie, local: true) do |f| %>
-
+    <%= render 'shared/errors', object: movie %>
   <%= f.label :title %>
   <%= f.text_field :title, autofocus: true %>
 
   <%= f.label :description %>
   <%= f.text_area :description, rows: 7 %>
 
-  <%= f.label :rating %>
-  <%= f.text_field :rating %>
+  <%= f.select :rating, Movie::RATINGS, prompt: "Pick one" %>
 
   <%= f.label :released_on %>
   <%= f.date_field :released_on %>
